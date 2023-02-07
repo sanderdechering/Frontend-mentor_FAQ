@@ -1,0 +1,22 @@
+{
+  "name": "frontend-mentor_faq",
+  "version": "1.0.0",
+  "description": "![Design preview for the FAQ accordion card coding challenge](./design/desktop-preview.jpg)",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/sanderdechering/Frontend-mentor_FAQ.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/sanderdechering/Frontend-mentor_FAQ/issues"
+  },
+  "homepage": "https://github.com/sanderdechering/Frontend-mentor_FAQ#readme",
+  "devDependencies": {
+    "tailwindcss": "^3.2.4"
+  }
+}
