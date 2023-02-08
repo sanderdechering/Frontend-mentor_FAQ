@@ -31,7 +31,7 @@ Users should be able to:
 ### Links
 
 - Solution URL: [Add solution URL here](https://your-solution-url.com)
-- Live Site URL: [Add live site URL here](https://sanderdechering.github.io/Frontend-mentor_FAQ/)
+- Live Site URL: [sanderdechering.github.io/Frontend-mentor_FAQ/](https://sanderdechering.github.io/Frontend-mentor_FAQ/)
 
 ## My process
 
