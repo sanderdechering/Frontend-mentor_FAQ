@@ -1,3 +1,15 @@
+
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+
+@layer base {
+    h2{
+        @apply text-very-dark-grayish-blue hover:text-soft-red cursor-pointer
+    }
+}
+.font-kumbh{
+    font-family: 'Kumbh Sans', sans-serif;
+}

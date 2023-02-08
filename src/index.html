@@ -9,33 +9,106 @@
   <title>Frontend Mentor | FAQ Accordion Card</title>
 
   <link href="/dist/output.css" rel="stylesheet"/>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&display=swap" rel="stylesheet">
   <style>
+
     .attribution { font-size: 11px; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); }
+
   </style>
 </head>
-
 <body>
-    How many team members can I invite?
-    You can invite up to 2 additional users on the Free plan. There is no limit on
-    team members for the Premium plan.
+  <main class="px-10 sm:px-20 bg-gradient-to-b from-soft-violet to-soft-blue min-h-screen flex flex-col">
 
-    What is the maximum file upload size?
-    No more than 2GB. All files in your account must fit your allotted storage space.
+    <!-- Card   -->
+    <div class="lg:flex m-auto mt-[120px] md:w-4/5 lg:w-3/4 xl:max-w-[1000px] w-[375px] bg-white rounded-[25px] shadow-xl ">
 
-    How do I reset my password?
-    Click “Forgot password” from the login page or “Change password” from your profile page.
-    A reset link will be emailed to you.
+    <!--  SVG mobile    -->
+      <div class="w-full flex justify-center mt-[-110px] lg:hidden">
+        <img src="../images/bg-pattern-mobile.svg" class="absolute mt-[115px] w-64">
+        <img src="../images/illustration-woman-online-mobile.svg" class="absolute w-64">
+      </div>
+    <!--  SVG desktop    -->
+      <div class="w-1/2 hidden relative lg:block">
+        <div class="absolute w-full h-full overflow-hidden">
+          <img src="../images/bg-pattern-desktop.svg" class="absolute top-[50px] right-[50px]">
+          <img src="../images/illustration-woman-online-desktop.svg" class="absolute top-[100px] right-[50px]">
+        </div>
+        <div class="absolute w-full h-full">
+          <img src="../images/illustration-box-desktop.svg" class="relative top-[200px] right-[80px]">
+        </div>
+      </div>
 
-    Can I cancel my subscription?
-    Yes! Send us a message and we’ll process your request no questions asked.
+      <!--  FAQ items    -->
+      <div class="text-sm px-8 py-16 font-kumbh lg:w-1/2 ">
 
-    Do you provide additional support?
-    Chat and email support is available 24/7. Phone lines are open during normal business hours.
+        <h1 class="text-4xl text-center lg:text-left pt-52 lg:pt-0 lg:py-10 pb-4 text-very-dark-desaturated-blue font-bold">FAQ</h1>
 
-  <div class="attribution">
-    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-    Coded by <a href="#">Your Name Here</a>.
-  </div>
+        <section class="w-full py-3 grid grid-cols-6 ">
+          <input id="faq_1" type="checkbox" class="peer hidden">
+          <label for="faq_1" class="peer-checked:font-bold hover:text-red-500  cursor-pointer col-span-5">
+            How many team members can I invite?
+          </label>
+          <img src="../images/icon-arrow-down.svg" class="peer-checked:rotate-180 my-auto justify-self-end">
+          <p class="hidden peer-checked:block text-dark-grayish-blue pt-3 pb-2 col-span-6">
+            You can invite up to 2 additional users on the Free plan. There is no limit on
+            team members for the Premium plan.
+          </p>
+          <span class="border-light-grayish-blue border-t mt-4 col-span-6"></span>
+        </section>
+        <section class="w-full py-3 grid grid-cols-6 ">
+          <input id="faq_2" type="checkbox" class="peer hidden">
+          <label for="faq_2" class="peer-checked:font-bold hover:text-red-500  cursor-pointer col-span-5">
+            What is the maximum file upload size?
+          </label>
+          <img src="../images/icon-arrow-down.svg" class="peer-checked:rotate-180 my-auto justify-self-end">
+          <p class="hidden peer-checked:block text-dark-grayish-blue pt-3 pb-2 col-span-6">
+            No more than 2GB. All files in your account must fit your allotted storage space.
+          </p>
+          <span class="border-light-grayish-blue border-t mt-4 col-span-6"></span>
+        </section>
+        <section class="w-full py-3 grid grid-cols-6 ">
+          <input id="faq_3" type="checkbox" class="peer hidden">
+          <label for="faq_3" class="peer-checked:font-bold hover:text-red-500  cursor-pointer col-span-5">
+            How do I reset my password?
+          </label>
+          <img src="../images/icon-arrow-down.svg" class="peer-checked:rotate-180 my-auto justify-self-end">
+          <p class="hidden peer-checked:block text-dark-grayish-blue pt-3 pb-2 col-span-6">
+            Click “Forgot password” from the login page or “Change password” from your profile page.
+            A reset link will be emailed to you.
+          </p>
+          <span class="border-light-grayish-blue border-t mt-4 col-span-6"></span>
+        </section>
+        <section class="w-full py-3 grid grid-cols-6 ">
+          <input id="faq_4" type="checkbox" class="peer hidden">
+          <label for="faq_4" class="peer-checked:font-bold hover:text-red-500  cursor-pointer col-span-5">
+            Can I cancel my subscription?
+          </label>
+          <img src="../images/icon-arrow-down.svg" class="peer-checked:rotate-180 my-auto justify-self-end">
+          <p class="hidden peer-checked:block text-dark-grayish-blue pt-3 pb-2 col-span-6">
+            Yes! Send us a message and we’ll process your request no questions asked.
+          </p>
+          <span class="border-light-grayish-blue border-t mt-4 col-span-6"></span>
+        </section>
+        <section class="w-full py-3 grid grid-cols-6 ">
+          <input id="faq_5" type="checkbox" class="peer hidden">
+          <label for="faq_5" class="peer-checked:font-bold hover:text-red-500  cursor-pointer col-span-5">
+            Do you provide additional support?
+          </label>
+          <img src="../images/icon-arrow-down.svg" class="peer-checked:rotate-180 my-auto justify-self-end">
+          <p class="hidden peer-checked:block text-dark-grayish-blue pt-3 pb-2 col-span-6">
+            Chat and email support is available 24/7. Phone lines are open during normal business hours.
+          </p>
+          <span class="border-light-grayish-blue border-t mt-4 col-span-6"></span>
+        </section>
+      </div>
+    </div>
+
+    <div class="attribution mt-5 text-white">
+      Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank" class="text-sky-400 hover:text-sky-600">Frontend Mentor</a>.
+      Coded by <a href="https://sanderdechering.nl" class="text-sky-400 hover:text-sky-600">Sander Dechering</a>.
+    </div>
+  </main>
 </body>
 </html>
